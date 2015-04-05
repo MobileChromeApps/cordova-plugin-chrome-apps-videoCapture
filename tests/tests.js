@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-registerAutoTests("chrome.videoCapture", function() {
+exports.defineAutoTests = function() {
   'use strict';
 
   var customMatchers = {
@@ -14,7 +14,7 @@ registerAutoTests("chrome.videoCapture", function() {
           result.message = 'Expected ' + actual + ' to be a MediaStreamTrack.';
           return result;
         }
-      }
+      };
     },
     toBeString : function(util, customEqualityTesters){
       return {
@@ -24,9 +24,9 @@ registerAutoTests("chrome.videoCapture", function() {
           result.message = 'Expected ' + actual + ' to be a string.';
           return result;
         }
-      }
+      };
     }
-  }
+  };
 
   beforeEach(function(done) {
     jasmine.addMatchers(customMatchers);
@@ -90,4 +90,4 @@ registerAutoTests("chrome.videoCapture", function() {
       done();
     });
   });
-});
+};
