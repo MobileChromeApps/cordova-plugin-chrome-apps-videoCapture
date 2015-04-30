@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-chrome-apps-videoCapture",
+  "name": "cordova-plugin-chrome-apps-videocapture",
   "version": "1.0.4",
   "description": "This plugin provides permissions to capture video directly from the user's Web Cam via the getUserMedia API.",
   "cordova": {
